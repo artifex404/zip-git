@@ -3,9 +3,9 @@
 IGNORED="*.git* bower_components node_modules *.sass-cache* *.idea* .DS_Store"
 
 help() { 
-    echo -e "Zip recursively the folder ignoring .git, bower and npm folders by default."
+    echo -e "Zip-git recursively zips the folder ignoring some unwanted files for a production environment.\n"
+    echo -e "The default action makes a zip file of the folder specified, excluding the following folders:\n.git, bower_components, node_modules, .sass-cache, .idea\n\n and ignoring the following files:\n.DS_Store.\n"
     echo -e "Usage: zip-git [-options] folder"
-    echo -e "The default action makes a zip file of the folder specified, ignoring .git, bower_components and node_modules folders."
     echo -e "-i\tRead .gitignore file in the folder specified and ignore all matched elements"
     echo -e "-h\tShow this help"
     exit 0
@@ -49,5 +49,5 @@ if [ -d "$FOLDER" ]; then
 fi
 
 if [ ! -d "$FOLDER" ]; then
-  echo -e "Directory does not exists. See help for usage."
+  help
 fi
