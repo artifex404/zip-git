@@ -1,5 +1,11 @@
 #!/bin/bash
 
+## Zip-git
+## Recursively zips the folder ignoring some unwanted files for a production environment
+##
+## For more information see:
+## https://github.com/artifex404/zip-git/
+
 IGNORED="*.git* bower_components node_modules *.sass-cache* *.idea* .DS_Store"
 
 help() { 
