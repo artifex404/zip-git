@@ -12,6 +12,10 @@ Run this command in a terminal:
 
 `curl -sS https://raw.githubusercontent.com/artifex404/zip-git/master/installer.sh | bash`
 
+If the command `zip-git` does not do anything after the installation, enter:
+
+`source ~/.bash_profile`
+
 ##Usage
 zip-git [-options] folder
 
